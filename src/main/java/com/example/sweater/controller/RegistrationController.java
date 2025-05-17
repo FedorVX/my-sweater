@@ -25,10 +25,10 @@ public class RegistrationController {
     }
 
 
-    @ModelAttribute
-    public void addCsrfToken(CsrfToken token, Map<String, Object> model) {
-        model.put("_csrf", token);  // чтобы Mustache мог использовать {{_csrf.token}}
-    }
+//    @ModelAttribute
+//    public void addCsrfToken(CsrfToken token, Map<String, Object> model) {
+//        model.put("_csrf", token);  // чтобы Mustache мог использовать {{_csrf.token}}
+//    }
 
 
     @PostMapping("/registration")
